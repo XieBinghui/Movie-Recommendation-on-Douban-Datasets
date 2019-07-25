@@ -1,58 +1,55 @@
 # Movie-Recommendation-on-Douban-Datasets
 
-#### 成员：
+#### Members：
 
-[谢炳辉](https://github.com/XieBinghui) [刘佰川](https://github.com/chuanchuanchuan) [程嘉扬](https://github.com/loginaway)
+[Binghui XIE](https://github.com/XieBinghui), [Baichuan LIU](https://github.com/chuanchuanchuan), [Jiayang CHENG](https://github.com/loginaway)
 
-#### 报告
+#### Report
 
-更多细节可以参考report
+For details, please read our [report](https://github.com/XieBinghui/Movie-Recommendation-on-Douban-Datasets/blob/master/Movie%20Recommendation%20on%20Douban%20Datasets.pdf)
 
-our report is [here](https://github.com/XieBinghui/Movie-Recommendation-on-Douban-Datasets/blob/master/Movie%20Recommendation%20on%20Douban%20Datasets.pdf)
+#### Data Format：
 
-#### 数据集格式：
+All the data are stored in '.sql' files. Movie and user information are in table 'movie' and 'user', respectively. We recommend our readers to use SQLyog GUI tools to import the data.
 
-豆瓣项目的数据集为sql格式，里面共有两个表，movie和user。请使用mysql进行读取和操作，以避免出现不必要的麻烦，推荐安装好mysql后使用SQLyog图形管理工具直接导入。
+movie
 
-movie表：
+​	number: indexes of movies
 
-​	number：该数据集中电影的编号，从1到1000
+​	rate: the official rating on Douban
 
-​	rate：电影在豆瓣的平均分
+​	title: the title of movies
 
-​	title：电影名字
+​	url
 
-​	url：电影链接
+​	id: the movie's id on Douban
 
-​	id：电影在豆瓣中的编号
+​	directors
 
-​	directors：电影的导演
+​	year
 
-​	year：电影首播年份
+​	actors
 
-​	actors：主演
+​	type: the movie's types
 
-​	type：电影类型
+​	countries
 
-​	countries：制片国家、地区
+​	summary
 
-​	summary：电影剧情简介
+user
 
-user表：
+​	user_id: indexes of users
 
-​	user_id：该数据集中用户的编号，从1到1000
+​	name: the user's id on Douban
 
-​	name：用户在豆瓣中的编号
+​	rates: all the movies and related ratings given by a certain user
 
-​	rates：用户看过的所有电影编号以及该用户给出的评分
+​	following_id: all the users a certain user has followed
 
-​	following_id：该用户关注的所有用户的编号
+​	comments
 
-​	comments：该用户对看过的一些电影的部分评论
+#### Acknowledgement：
 
-#### 致谢：
-
-感谢优秀的开源项目和老师以及助教的帮助
 
 https://github.com/swjcpy/hybrid-neural-recommender-system
 
